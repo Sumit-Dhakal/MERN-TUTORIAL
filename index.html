@@ -1,28 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
   <head>
+    <title>My Portfolio</title>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <link rel="stylesheet" href="/style.css`">
-  <style>
-    /* impage css */
-    p {
-      color: red;
-
-    }
-  </style>
-  <!-- inline css -->
 
   <body>
-    <h1 style="color:blue ">Hello css</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem inventore reprehenderit fuga ullam eum labore
-      aspernatur aliquam molestias laborum ratione laudantium officia accusamus, provident nobis sequi assumenda
-      distinctio earum exercitationem porro rerum omnis. Ab, delectus praesentium a nostrum autem adipisci veritatis
-      optio numquam assumenda velit quam porro dolores eius quidem.</p>
+    <header>
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2> <u>About Me </u></h2>
+      <img src="/images/IMG_0047.JPG" width="300">
+      <br>
+      <p1>"Hi there, my name is <b>Sumit Kumar Dhakal</b>, and I am a student and an it trainee, I am
+        dedicated to increse my knowledge in it field. <br> <br> My portfolio is made in the process of learning
+        HTML . In
+        future my projects are gonna reflects <br> <br> my commitment to excellence and my ability to collaborate
+        effectively
+        with
+        clients and team members. <br> I am always looking for new opportunities to expand my skills and take on
+        exciting challenges."
+      </p1>
+      <br> <br> <br>
+      <p2> "Thank you for taking the time to review my portfolio, and please feel free to contact me with any suggestion
+        or inquiries."</p2>
+    </section>
+
+
+
+
+
+    <section id="contact">
+      <h2> <u>Contact Me</u></h2>
+      <form action="submit-form.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <input type="submit" value="Send">
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+
   </body>
 
 </html>
